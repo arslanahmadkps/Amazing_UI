@@ -1,3 +1,12 @@
 <h3 class="fw-bold">
-  {{studentName}}
+  Welcome {{studentName}}!
 </h3>
+
+<p>
+  You have been assigned these {{subjects.length}} subjects:
+</p>
+<ul>
+  <li *ngFor="let subject of subjects; index as i;">
+    {{i+1}} - {{subject}}
+  </li>
+</ul>

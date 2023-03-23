@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class StudentComponent {
   @Input() studentName: string = '';
-
+  @Input() subjects: string[]=[];
   constructor() {
   }
 }
