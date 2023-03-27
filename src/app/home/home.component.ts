@@ -1,19 +1,14 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input } from '@angular/core';
 
-
-@Component(
-    {
-        selector: 'app-home',
-        templateUrl: 'home.component.html',
-        styleUrls: ['home.component.css'],
-    }
-)
-
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
+})
 export class HomeComponent {
-    @Input() currentDateTime: Date = new Date();
-    @Input() brandName: string = '';
 
-    constructor() {
-
-    }
+  @Input() brandName: string = '';
+  constructor() {
+    this.brandName = 'Guggu';
+  }
 }
